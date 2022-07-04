@@ -6,44 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Emma Ni</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue&family=IBM+Plex+Sans:ital,wght@0,400;1,700&display=swap">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
+    <div id="left-content">
+        <header>
+            <div id="shelf-words">a personal website/summer '22 blog<object data="./sources/shelf-figma.svg"></object></div>
+            
+        </header>
+        <img id="pfp" src="./sources/pfp.jpg" alt="headshot">
 
-    <header class="shelf">
-        <div id="shelf-words">a personal website/summer '22 blog</div>
-    </header>
-    <img >  <!--hanging plant -->
-    <main>
-        <div class="main-info">
+        <main>
             <h1 id="name" class="page-title">Emma Ni</h1>
             <h3 id="main-blurb">CS & Business Undergrad at Cornell</h3>
-            <img id="pfp" src="/sources/pfp.jpg" alt="headshot">
-        </div>
-    </main>
-    <nav id="sidebar-navigation">
-        <ul>
-            <li class="about-me nav-link">
-                <a href="about-me.html">About Me</a>
-            </li>
-            <li class="resume nav-link">
-                <a href="/sources/Emma Ni Resume.pdf">Resume</a>
-            </li>
-            <li class="github nav-link">
-                <a href="https://github.com/emma-ni12">GitHub</a>
-            </li>
-            <li class="projects-blogs nav-link">
-                <a href="projects.html">Projets/Blog</a>
-            </li>
-            <li class="contact-icons nav-link">
-                <a href="https://www.linkedin.com/in/emma-ni2/"><img src="/sources/linkedin-logo.png" alt="LinkedIn" /></a>
-                <a href="mailto:en257@cornell.edu"><span class="material-icons-outlined">mail</span></a>
-            </li>
-        </ul>
-    </nav>
-
+        </main>
+    </div>  
+    
+    <aside>
+        <nav id="sidebar-navigation">
+            <img src="./sources/pfp.jpg" id="plant"><!--hanging plant -->
+            <ul>
+                <li class="about-me nav-link">
+                    <a href="./about-me.html">About Me</a>  <!-- files accessed via ./ !! -->
+                </li>
+                <li class="resume nav-link">
+                    <a href="./sources/Emma Ni Resume.pdf">Resume</a>
+                </li>
+                <li class="projects-blogs nav-link">
+                    <a href="./projects.html">Projects/Blog</a>
+                </li>
+                <li class="github nav-link">
+                    <a href="https://github.com/emma-ni12">GitHub</a>
+                </li>
+                <li class="contact-icons nav-link">
+                    <a href="https://www.linkedin.com/in/emma-ni2/"><img src="./sources/linkedin-logo.png" alt="LinkedIn" /></a>
+                    <a href="mailto:en257@cornell.edu"><span class="material-symbols-outlined">mail</span></a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 </body>
 
 </html>
