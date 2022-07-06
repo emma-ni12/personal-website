@@ -50,7 +50,7 @@ header {
 }
 
 #pfp {
-    height: 24rem;
+    height: 50%;
     border-radius: 100%;
     border: 0.75rem solid #68AF85;
     position: absolute;
@@ -138,5 +138,8 @@ nav li.github :hover {
 }
 
 #plant {
-    height: 20vh;
+    height: 70%;
+    position: relative;
+    top: -10%;
+    left: 30%;
 }
