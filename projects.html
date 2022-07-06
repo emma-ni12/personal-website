@@ -13,7 +13,7 @@
     <title>Emma Ni | Projects</title>
 </head>
 
-<body>
+<body onload="init()">
     <header class="shelf">
         <div id="shelf-words">a personal website/summer '22 blog<object data="./sources/shelf-figma.svg"></object></div>
     </header>
@@ -23,8 +23,8 @@
         <h1 id="projects-title" class="page-title">Projects / <br>Summer '22 Blog</h1>
     </div>
     <div class="sort-section">
-        <h4>Sort By:<button id="sort-projects-button">Projects</button>
-            <button id="sort-updates-button">Updates</button></h4>
+        <h4>Sort By:<button id="sort-projects-button" class="projects-button">Projects</button>
+            <button id="sort-updates-button" class="updates-button">Updates</button></h4>
     </div>
 
     <nav id="sidebar-navigation">
@@ -51,7 +51,7 @@
     <main>
         <h4>Click each card to read more!</h4>
         <div id="card-grid">
-            <div class="card project">
+            <div class="card project" id="hi">
                 <h5 class="card-title">edX Course: Make Your Own App</h5>    
                 <div class="card-info">
                     <p><strong>Date: </strong> May 30, 2022</p>
@@ -73,7 +73,7 @@
     </main>
 
 
-
+    <script src="cards.js"></script>
 </body>
 
 

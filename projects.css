@@ -152,6 +152,7 @@ main h4 {
     flex-wrap: wrap;
     justify-content:space-between;
     align-items: center;
+    border-radius: 0.5rem;
 }
 
 .inactive {
@@ -189,10 +190,14 @@ main h4 {
 
 .project {
     border: 0.25rem solid #D25F5F;
-    border-radius: 0.5rem;
     background-color: #FFF6F6;
 }
 
+.update {
+    border: 0.25rem solid #518BB6;
+    background-color: #F5F9FF;
+    
+}
 
 .img-wrap {
     max-width:45%;
@@ -202,4 +207,16 @@ main h4 {
 .card-info a {
     text-decoration: underline !important;
     font-weight: 400 !important;
+}
+
+button.active.projects-button {
+    border-color:#B21313;
+    background-color: #D25F5F;
+    color: white;
+}
+
+button.active.updates-button {
+    border-color: #336082;
+    background-color:#518BB6;
+    color: white;
 }
