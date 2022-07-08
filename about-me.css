@@ -70,14 +70,13 @@ nav li.github :hover {
 }
 
 #shelf-words {
-    width: 35rem;
+    max-width: 35rem;
     text-align: center;
     margin: 1.25rem 0rem 5rem 5rem;
-    
+    font-size: 1.15rem;
 }
-#shelf {
-    height: 2rem;
-    display: block;
+
+object {
     width: 100%;
 }
 
@@ -117,7 +116,55 @@ main ul {
     margin-left: 3rem;
 }
 
-.cuair-link {
+#cuair-link, #Home-page {
     color:#518BB6;
-    text-decoration: underline;
+    /* text-decoration: underline ; */
+}
+
+@media only screen and (max-width: 850px) {
+    html {font-size: 13px;}
+}
+
+
+@media only screen and (max-width:650px) {
+    html {font-size: 11px;}
+    h1 {
+        font-size: 4rem;
+    }
+    nav ul {
+        margin-top: 3rem;
+        font-size: 1.25rem;
+        text-align: center;
+        /* border: 1px solid orange; */
+        position: absolute;
+        left: 5rem;
+        height: 2rem;
+        margin-left: 0;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+
+    .home {padding-left: 0;}
+    
+    .contact-icons {
+        position: relative;
+        top: 0.5rem;
+        padding-right: 0;
+    }
+
+    .contact-icons img{
+        width: 1.75rem;
+    }
+    .contact-icons span{
+        font-size: 2rem;
+    }
+
+    #shelf-words {
+        margin: 1.25rem 0 5.5rem 0;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }

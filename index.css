@@ -23,6 +23,7 @@ body {
     width: 70%;
     position: absolute;
     height: 100%;
+    /* border: 1px solid red; */
 }
 
 aside {
@@ -42,20 +43,21 @@ header {
     width: 35rem;
     text-align: center;
     margin: 1.25rem 0rem 5rem 5rem;
+    font-size: 1.15rem;
 }
-#shelf {
-    height: 2rem;
-    display: block;
+
+object {
     width: 100%;
 }
 
 #pfp {
-    height: 50%;
+    width: 35%;
     border-radius: 100%;
     border: 0.75rem solid #68AF85;
     position: absolute;
-    left: 26rem;
+    left: 28rem;
     bottom: 3rem;
+    min-width: 23rem;
 }
 
 main * {
@@ -138,8 +140,67 @@ nav li.github :hover {
 }
 
 #plant {
+    /* width: 27%; */
     height: 70%;
     position: relative;
     top: -10%;
-    left: 30%;
+    left: 25%;
+}
+
+@media only screen and (max-width: 1100px) {
+    #pfp {
+        margin-left: 5rem;
+        position: relative;
+        top: 0;
+        left: 0;     
+    }
+    h1, h3 {
+        margin-left: 5rem;
+    }
+    #shelf-words {
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1100px) {
+    #pfp {min-width: 20rem;}
+}
+
+@media only screen and (max-width: 850px) {
+    html {font-size: 13px;}
+    #plant {
+        height: 65%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #shelf-words {
+        width: 100%;
+        margin: 1.25rem 0 4rem 3rem;
+        position: relative;
+    }
+    h1 {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    h3 {
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+    #pfp {
+        min-width: 20rem;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    html {font-size: 11px;}
+
+    #plant {
+        height: 55%;
+        left: 1rem;
+        top: 0;
+        margin-right: 3rem;
+    }
 }
