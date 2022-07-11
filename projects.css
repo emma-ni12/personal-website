@@ -1,3 +1,4 @@
+/* --------- Standard styling ---------- */
 * {
     font-family: Epilogue, Helvetica, sans-serif;
     margin: 0;
@@ -81,7 +82,6 @@ object {
     width: 100%;
 }
 
-
 h1 {
     font-size: 5.5rem;
     position: relative;
@@ -93,8 +93,9 @@ h1 {
     margin-left: 5rem;
     margin-bottom: 0.75rem;
     width: 60%;
-    /* border: 1px solid green; */
 }
+
+/* --------- Sorting ---------- */
 
 .sort-section {
     font-size: 1.25rem;
@@ -122,6 +123,21 @@ h1 {
     background-color: #96cbf483;
     border-color: #518BB6;
 }
+
+button.active.projects-button {
+    border-color:#B21313;
+    background-color: #D25F5F;
+    color: white;
+}
+
+button.active.updates-button {
+    border-color: #336082;
+    background-color:#518BB6;
+    color: white;
+}
+
+
+/* --------- Card Area ---------- */
 
 main {
     margin: 1rem 5rem 5rem 5rem;
@@ -151,18 +167,25 @@ main h4 {
     display:flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    align-items: center;
+    /* align-items: center; */
     border-radius: 0.5rem;
     margin-bottom: 4%;
+}
+
+.card.project {
+    align-items: center;
 }
 
 .inactive {
     display: none !important;
 }
 
-.card-info {
+.project .card-info {
     width: 50%;
     position: relative;
+}
+
+.card-info {
     margin: 1rem 0 0 0;
 }
 
@@ -172,7 +195,7 @@ main h4 {
 }
 
 .one-line {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
     margin-top: 1rem;
     line-height: 1.75rem;
 }
@@ -187,6 +210,20 @@ main h4 {
     font-weight: 400;
     font-size: 2rem;
     cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.update {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.update .card-title {
+    height: min-content;
+}
+
+h5 {
+    flex-basis: 100%;
 }
 
 .project {
@@ -197,7 +234,10 @@ main h4 {
 .update {
     border: 0.25rem solid #518BB6;
     background-color: #F5F9FF;
-    
+}
+
+.card-image {
+    border: 1px solid rgb(180, 180, 180);
 }
 
 .img-wrap {
@@ -210,17 +250,7 @@ main h4 {
     font-weight: 400 !important;
 }
 
-button.active.projects-button {
-    border-color:#B21313;
-    background-color: #D25F5F;
-    color: white;
-}
-
-button.active.updates-button {
-    border-color: #336082;
-    background-color:#518BB6;
-    color: white;
-}
+/* --------- Modal Styling --------- */
 
 .modal {
     width: 80%;
@@ -228,14 +258,11 @@ button.active.updates-button {
     position: absolute;
     box-sizing: border-box;
     max-height: 100vh;
-    overflow: scroll;
+    overflow: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    /* display:flex;
-    flex-wrap: wrap;
-    justify-content:space-between; */
     border-radius: 0.5rem;
     flex-direction: column;
 }
@@ -246,13 +273,13 @@ button.active.updates-button {
 }
 
 .modal-info p {
-    padding-bottom: 0.75rem;
     font-size: 1.25rem;
+    line-height: 2rem;
 }
 
 .modal-image {
     float: right;
-    position: relative; /*idk if this will stay w responsive*/
+    position: relative; 
     top: -1rem;
     padding-left: 0.5rem;
 
@@ -274,6 +301,7 @@ button.active.updates-button {
     top: 0;
 }
 
+/* --------- Responsive Design --------- */
 
 @media only screen and (max-width: 1000px) {
     #shelf-words {
