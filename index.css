@@ -147,6 +147,21 @@ nav li.github :hover {
     left: 25%;
 }
 
+@media only screen and (min-width: 1600px) {
+    #left-content {
+        box-sizing: border-box;
+        border-left: 10rem solid #68af864d;
+    }
+    aside {
+        left: calc(70% - 10em);
+        border-right: 10rem solid #68af864d;
+    }
+    #pfp {
+        min-width: 30rem;
+        left: 21rem;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     #pfp {
         margin-left: 5rem;
