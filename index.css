@@ -215,13 +215,13 @@ nav li.github :hover {
 
     nav ul {
         margin-right: 3rem;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     .contact-icons img {
-        width: 1.75rem;
+        width: 2rem;
     }
     
     .contact-icons span {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 }
