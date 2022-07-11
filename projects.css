@@ -363,13 +363,14 @@ h5 {
         text-align: center;
         /* border: 1px solid orange; */
         position: absolute;
-        left: 5rem;
         height: 2rem;
-        margin-left: 0;
+        min-width: 35rem;
+        left: 50%;
+        transform: translate(-50%);
     }
     nav li {
         display: inline-block;
-        padding: 0 1rem;
+        padding: 0 0.75rem;
     }
     
     .contact-icons {
@@ -389,13 +390,13 @@ h5 {
         position: relative;
         left: 50%;
         transform: translate(-50%);
+        max-width: 80%;
     }
 }
 
 @media only screen and (max-width: 550px) {
     .card-info {
         min-width: 100%;
-        border: 1px solid red;
     }
     .card {
         display: block;
@@ -403,5 +404,22 @@ h5 {
     .img-wrap {
         min-width: 100%;
         margin-left: 0;
-    }   
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    h1 {
+        font-size: 3.5rem;
+        margin-left: 3rem;
+        min-width: 90%;
+    }
+    .sort-section {
+        margin-left: 3rem;
+    }
+    main {
+        margin: 1rem 3rem 3rem 3rem;
+    }
+    
+
 }

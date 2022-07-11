@@ -203,4 +203,17 @@ nav li.github :hover {
         top: 0;
         margin-right: 3rem;
     }
+
+    h1, h3 {
+        margin-left: 3rem;
+    }
+
+    #pfp {
+        margin-left: 3rem;
+        min-width: 17.5rem;
+    }
+
+    nav ul {
+        margin-right: 3rem;
+    }
 }

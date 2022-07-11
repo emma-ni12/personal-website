@@ -80,6 +80,8 @@ object {
     width: 100%;
 }
 
+/* --------- Page-Specific --------- */
+
 #about-me-header * {
     margin-left: 9rem;
 }
@@ -92,7 +94,6 @@ main h1 {
     font-family: "IBM Plex Sans", Courier, sans-serif;
     font-weight: bold;
     font-style: italic;
-
     margin-bottom: 1.75rem;
 }
 
@@ -114,6 +115,7 @@ main ul {
     line-height: 2rem;
     padding: 0.75rem;
     margin-left: 3rem;
+    /* border: 1px solid red; */
 }
 
 #cuair-link, #Home-page {
@@ -137,9 +139,10 @@ main ul {
         text-align: center;
         /* border: 1px solid orange; */
         position: absolute;
-        left: 5rem;
         height: 2rem;
-        margin-left: 0;
+        min-width: 35rem;
+        left: 50%;
+        transform: translate(-50%);
     }
     nav li {
         display: inline-block;
@@ -166,5 +169,23 @@ main ul {
         position: relative;
         left: 50%;
         transform: translate(-50%);
+        max-width: 80%;
     }
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    main ul {
+        width: auto;
+        margin: 0 5rem;
+        
+    }
+    #about-me-header * {
+        margin-left: 5rem;
+    }
+    
+    
+
 }
