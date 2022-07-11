@@ -229,7 +229,8 @@ function expandCard(e) {
                     <p class="desc">
                         ${infoObj.desc}
                     </p>
-                </div>    
+                </div>
+                <div id="close-button"><em>Close<em><div>    
             </div>
         `;
     } else {
@@ -241,11 +242,13 @@ function expandCard(e) {
                     <p class="desc">
                         ${infoObj.desc}
                     </p>
-                </div>    
+                </div>
+                <div id="close-button"><em>Close<em><div>    
             </div>
         `
     }
     document.getElementById('modal-container').innerHTML = modal;
+    document.getElementById('close-button').addEventListener('click', closeModal);
     showModal();
 }
 
@@ -265,4 +268,11 @@ const cards = document.getElementsByClassName('card-title');
 for (let c of cards) {
     c.addEventListener("click", expandCard);
 }
+
+function closeModal() {
+    const modal = document.getElementById('modal-container');
+    modal.style.display = 'none';
+}
+
+
 

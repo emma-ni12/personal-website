@@ -159,7 +159,6 @@ main h4 {
 
 .card {
     padding: 1.5rem;
-    border: 3px solid green;
     position: relative;
     width: 48%;
     box-sizing: border-box;
@@ -257,7 +256,7 @@ h5 {
     padding: 1.5rem;
     position: absolute;
     box-sizing: border-box;
-    max-height: 100vh;
+    max-height: 90%;
     overflow: auto;
     top: 50%;
     left: 50%;
@@ -301,6 +300,28 @@ h5 {
     top: 0;
 }
 
+#close-button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2rem;
+    width: 90%;
+    border: 0.15rem solid;
+    border-color: inherit;
+    border-radius: inherit;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.project #close-button:hover {
+    background-color: #fa989883;
+}
+
+.update #close-button:hover {
+    background-color: #96cbf483;
+}
+
 /* --------- Responsive Design --------- */
 
 @media only screen and (max-width: 1000px) {
@@ -311,7 +332,7 @@ h5 {
 
 @media only screen and (min-width: 900px) and (max-width: 1000px) {
     .card-info {
-        width: 100%;
+        min-width: 100%;
     }
     .card {
         display: block;
@@ -373,7 +394,8 @@ h5 {
 
 @media only screen and (max-width: 550px) {
     .card-info {
-        width: 100%;
+        min-width: 100%;
+        border: 1px solid red;
     }
     .card {
         display: block;
@@ -381,6 +403,5 @@ h5 {
     .img-wrap {
         min-width: 100%;
         margin-left: 0;
-    }
-    
+    }   
 }
