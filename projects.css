@@ -237,6 +237,7 @@ h5 {
 
 .card-image {
     border: 1px solid rgb(180, 180, 180);
+    max-height: 15rem;
 }
 
 .img-wrap {
@@ -341,6 +342,9 @@ h5 {
         min-width: 100%;
         margin-left: 0;
     }
+    .card-image {
+        max-height: 100%;
+    }
 }
 
 
@@ -404,6 +408,9 @@ h5 {
     .img-wrap {
         min-width: 100%;
         margin-left: 0;
+    }
+    .card-image {
+        max-height: 100%;
     }
 }
 
