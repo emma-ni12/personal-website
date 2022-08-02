@@ -1,3 +1,4 @@
+// turn on word wrap in settings to see formatted paragraphs
 const cardInfoArray = [
     [   '1',
         {
@@ -118,24 +119,13 @@ const cardInfoArray = [
             date: 'June 26-July 10, 2022',
             tools: 'HTML, CSS, JS',
             link: `<a href="./index.html">Here!</a>`,
-            desc: `&emsp; As I worked on projects and met with people this summer, I wanted to have some tangible record of what I had learned and accomplished. A website would not only showcase the work I had 
-            done but would also let me prove to myself that I was capable of 
-            using HTML, CSS, and JS to create a functional and aesthetic final 
-            product. 
+            desc: `&emsp; As I worked on projects and met with people this summer, I wanted to have some tangible record of what I had learned and accomplished. A website would not only showcase the work I had done but would also let me prove to myself that I was capable of using HTML, CSS, and JS to create a functional and aesthetic final product. 
             <br>
             <br>
-            &emsp; I started by sketching out my ideas on paper, considering layout, features, and structure. I then created wireframes in Figma and used Figma's prototype feature to simulate how a user would 
-            navigate the site. I picked out fonts and accent colors, and even 
-            drew a custom plant vector for the home page to complete the 
-            cozy yet clean theme. Coding the website itself was fairly 
-            straightforward, as the main purpose of the site is to display 
-            information, rather than work with complex user inputs or compute 
-            and analyze data. My favorite part of the project was working on 
-            the JS logic behind this projects page, particularly in implementing the sorting button functionality. The logic puzzles and problem-solving are what first drew me into studying computer science, and I'll always love the satisfaction of finding a solution to some software challenge.
+            &emsp; I started by sketching out my ideas on paper, considering layout, features, and structure. I then created wireframes in Figma and used Figma's prototype feature to simulate how a user would navigate the site. I picked out fonts and accent colors, and even drew a custom plant vector for the home page to complete the cozy yet clean theme. Coding the website itself was fairly straightforward, as the main purpose of the site is to display information, rather than work with complex user inputs or compute and analyze data. My favorite part of the project was working on the JS logic behind this projects page, particularly in implementing the sorting button functionality. The logic puzzles and problem-solving are what first drew me into studying computer science, and I'll always love the satisfaction of finding a solution to some software challenge.
             <br>
             <br>
-            This website is still very much a work in progress, and there are many things I'd like to improve. One working idea is to use React components for the project/update cards to eliminate the need for hard-coded information in the HTML file and simplify the process of adding new cards. I'd also like to explore different layouts for 
-            the cards, as well as add animations and movement to the website. 
+            This website is still very much a work in progress, and there are many things I'd like to improve. One working idea is to use React components for the project/update cards to eliminate the need for hard-coded information in the HTML file and simplify the process of adding new cards. Many styling aspects could be adjusted to improve the overall look and feel of the website and present a more polished appearance. For example, I'd like to increase the left and right margins, customize the scrollbars, add animations/transitions, and explore different layouts for the cards.
             `
         }
     ],
